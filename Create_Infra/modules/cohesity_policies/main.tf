@@ -380,10 +380,10 @@ resource "intersight_sol_policy" "serial_over_lan_settings" {
 resource "intersight_storage_storage_policy" "storage_policy" {
   name                         = var.name_of_storage_policy
   description                  = var.description_of_storage_policy
-  retain_policy_virtual_drives = true
+  #retain_policy_virtual_drives = true
   unused_disks_state           = "Jbod"
-  virtual_drives               = []
-  global_hot_spares            = []
+  #virtual_drives               = []
+  #global_hot_spares            = []
 
   organization {
     object_type = "organization.Organization"
